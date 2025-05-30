@@ -91,13 +91,13 @@ Our solution is a **Real-Time Web Permission Tracker** powered by a 🧩 Chrome 
 
    ```bash
    git clone https://github.com/jeetgoyal80/PrivacyGuard_chrome_extension
-   cd chrome_extension
+   cd PrivacyGuard_chrome_extension
 
 
 2. **📦 Install backend and frontend dependencies**
 
    ```bash
-   cd backend
+   cd Backend
    npm install
    cd ../Extension
    npm install
@@ -122,7 +122,7 @@ Our solution is a **Real-Time Web Permission Tracker** powered by a 🧩 Chrome 
 5. **🚀 Start the backend server**
 
    ```bash
-   cd backend
+   cd Backend
    node index.js
    ```
 
@@ -142,7 +142,9 @@ Our solution is a **Real-Time Web Permission Tracker** powered by a 🧩 Chrome 
 **Prerequisites**
 - Google Chrome (or any Chromium-based browser)
 
-- Node.js (v14 or higher)
+- Node.js (v14 or higher
+
+- Express.js
 
 - npm (comes with Node.js)
 
@@ -159,11 +161,6 @@ npm install
 Build the production version:
 ```
 
-```bash
-npm run build
-```
-- This creates a dist folder with all the compiled extension files.
-
 **🧩 Loading the Extension in Chrome**
 Open Chrome and go to:
 
@@ -172,36 +169,18 @@ Enable Developer Mode using the toggle in the top-right corner
 
 - Click the "Load unpacked" button
 
-- Select the dist folder generated in the previous step
+- Select the 'Privacy-extension with rest api' folder generated in the previous step
 
 - The extension icon should now appear in your Chrome toolbar
 
 **🔄 Updating the Extension**
 When you make changes to the extension code:
 
-Rebuild the extension:
-
-```bash
-npm run build
-```
 Go back to chrome://extensions/
 
 Locate your extension and click the 🔄 Refresh button
 
-## ⚠️ Troubleshooting Common Issues
 
-If you encounter problems during installation or use, here are some common solutions:
-
-| Issue                  | Solution                          |
-|------------------------|-----------------------------------|
-| Extension not loading  | Verify correct `dist` folder selection |
-| Permission errors      | Check `.env` matches extension ID |
-| Strange behavior       | Restart Chrome completely         |
-
-Additional debugging tips:
-- Open Chrome Developer Tools (Ctrl+Shift+J) to view error logs
-- Ensure you're using the latest version of Chrome
-- Check console output during `npm run build` for compilation errors
 ---
 
 >>>>>>> 4945946 (Create README.md)
