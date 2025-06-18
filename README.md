@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # chrome-extension-permission-tracker
-=======
 #  🔐 Real-Time Web Permission Tracker
 
 ##  🧩 Problem Statement
